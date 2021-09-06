@@ -67,7 +67,9 @@ public class Agenda {
 
         Collections.sort(Contacto);
     }
-
+    public List<Contacto> getContactos() {
+        return contactos;
+    }
 
 }
 
