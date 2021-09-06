@@ -12,17 +12,16 @@ public class Agenda {
     public Agenda(){
         this.contactos = new ArrayList<>();
     }
-/*    public void crearContacto(){
+  public void crearContacto(){
         if (CAPACIDAD<this.contactos.size()){
-            List<Contacto> total = new ArrayList<>();
-            total.add();
+
         }
 
-    }*/
-    public boolean eliminarContacto(String nombre, int posicionEliminar){
+    }
+    public boolean eliminarContacto(String nombre){
         for (Contacto cont : this.getContactos()) {
             if (cont.getNombre().equals(nombre)) {
-                this.getContactos().remove(posicionEliminar);
+                this.getContactos().remove(cont);
                 return true;
             }
             }
@@ -64,13 +63,11 @@ public class Agenda {
             }
         }
     }
-/*    public List<Contacto> ordenarLista(){
+    public List<Contacto> ordenarLista(){
 
-        Collections.sort();;
-    }*/
-    public List<Contacto> getContactos() {
-        return contactos;
+        Collections.sort(Contacto);
     }
+
 
 }
 

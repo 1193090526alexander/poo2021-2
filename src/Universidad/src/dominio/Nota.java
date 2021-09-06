@@ -9,6 +9,9 @@ public class Nota {
     private List<Double> seguimiento;
     private double  nfinal;
     private Asignatura materia;
+    private static final double PORC_SEGUIMIENTO=0.4;
+    private static final double PORC_PARCIAL=0.4;
+    private static final double PORC_FINAL=0.4;
 
     public Nota( Asignatura materia) {
 
@@ -26,7 +29,7 @@ public class Nota {
         return sumaNotas/this.seguimiento.size();
     }
   public double calcularDefinitiva(){
-return (this.parcial*0.3)+ (this.nfinal*0.3)+(calcularSeguimiento()*0.4);
+return (this.parcial*PORC_PARCIAL)+ (this.nfinal*PORC_FINAL)+(calcularSeguimiento()*PORC_SEGUIMIENTO);
     }
 
     public double getParcial() {

@@ -26,7 +26,7 @@ public class appagenda {
         helmer.buscarContactoNumero("3104094288");
         helmer.cambiarNumero("sebastian", "3109087779");
       helmer.buscarContactoNombre("sebastian");
-      helmer.eliminarContacto("felipe", 1);
+      helmer.eliminarContacto("felipe");
       helmer.buscarContactoNombre("felipe");
 
     }
