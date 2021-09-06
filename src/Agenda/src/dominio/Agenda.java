@@ -18,6 +18,14 @@ public class Agenda {
         }
 
     }
+        public Contacto agregar(String nombre, String apellido, String numero) {
+        if (CAPACIDAD > contactos.size()){
+            return new Contacto(nombre, apellido, numero);
+        } else {
+            System.out.println("No es posible crear conactacto");
+            return null;
+        }
+    }
     public boolean eliminarContacto(String nombre){
         for (Contacto cont : this.getContactos()) {
             if (cont.getNombre().equals(nombre)) {
@@ -63,10 +71,10 @@ public class Agenda {
             }
         }
     }
-    public List<Contacto> ordenarLista(){
+/*    public List<Contacto> ordenarLista(){
 
         Collections.sort(Contacto);
-    }
+    }*/
     public List<Contacto> getContactos() {
         return contactos;
     }

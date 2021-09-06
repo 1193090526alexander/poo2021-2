@@ -28,6 +28,10 @@ public class appagenda {
       helmer.buscarContactoNombre("sebastian");
       helmer.eliminarContacto("felipe");
       helmer.buscarContactoNombre("felipe");
+      helmer.agregar("juan", "urrao" ,"31245234534");
+        helmer.getContactos().forEach(cont -> {
+            System.out.println("nombre " + cont.getNombre() + " Apellido  "  + cont.getApellido() + " y el numoer " + cont.getNumero());
+        });
 
     }
 }
