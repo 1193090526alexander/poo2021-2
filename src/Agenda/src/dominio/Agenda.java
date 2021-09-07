@@ -6,20 +6,16 @@ import java.util.Collections;
 import java.util.List;
 
 public class Agenda {
-    static final int CAPACIDAD=20;
+    public static final int CAPACIDAD=20;
     private List<Contacto> contactos;
 
     public Agenda(){
         this.contactos = new ArrayList<>();
     }
-  public void crearContacto(){
-        if (CAPACIDAD<this.contactos.size()){
 
-        }
-
-    }
-        public Contacto agregar(String nombre, String apellido, String numero) {
+    public Contacto agregar(String nombre, String apellido, String numero) {
         if (CAPACIDAD > contactos.size()){
+            System.out.println("Entre a este if");
             return new Contacto(nombre, apellido, numero);
         } else {
             System.out.println("No es posible crear conactacto");
@@ -32,8 +28,7 @@ public class Agenda {
                 this.getContactos().remove(cont);
                 return true;
             }
-            }
-
+        }
         return false;
     }
     public boolean buscarContactoNombre(String nombre) {
@@ -78,6 +73,7 @@ public class Agenda {
     public List<Contacto> getContactos() {
         return contactos;
     }
+
 
 }
 

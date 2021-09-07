@@ -25,12 +25,13 @@ public class appagenda {
         helmer.buscarContactoNombre("uh");
         helmer.buscarContactoNumero("3104094288");
         helmer.cambiarNumero("sebastian", "3109087779");
-      helmer.buscarContactoNombre("sebastian");
-      helmer.eliminarContacto("felipe");
-      helmer.buscarContactoNombre("felipe");
-      helmer.agregar("juan", "urrao" ,"31245234534");
+        helmer.buscarContactoNombre("sebastian");
+        helmer.eliminarContacto("felipe");
+        helmer.buscarContactoNombre("felipe");
+        Contacto leo = helmer.agregar("leo","puertas","34134114332");
+        helmer.getContactos().add( leo);
         helmer.getContactos().forEach(cont -> {
-            System.out.println("nombre " + cont.getNombre() + " Apellido  "  + cont.getApellido() + " y el numoer " + cont.getNumero());
+            System.out.println("nombre " + cont.getNombre() + " Apellido  "  + cont.getApellido() + " y el numoero " + cont.getNumero());
         });
 
     }
