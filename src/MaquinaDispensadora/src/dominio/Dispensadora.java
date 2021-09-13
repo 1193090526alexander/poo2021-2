@@ -16,7 +16,7 @@ public class Dispensadora {
     public boolean sacarUnidad(String nombre){
         List<Productos> prod =new ArrayList<>();
                 for(Productos p: this.getProducto()){
-                    if(p.getNombre().equals(nombre) && p.getCantidadActual()>0){
+                    if(p.getNombre().equalsIgnoreCase(nombre) && p.getCantidadActual()>0){
                         int cantidad = p.getCantidadActual();
                         p.setCantidadActual(cantidad-1);
                         return true;
@@ -58,9 +58,7 @@ public class Dispensadora {
         int suma = 0;
         List<Productos> total = new ArrayList<>();
         for (Productos prod: this.getProducto()) {
-            int cantidad = prod.getCantidadActual();
-            suma+=cantidad;
-
+             suma += prod.getCantidadActual();
             }
         System.out.println("la cantidad total de las unodades es de "+ suma);
         return suma;
@@ -76,7 +74,8 @@ public class Dispensadora {
                     System.out.println("aumento del producto " + p.getCantidadActual() + " del producto " + p.getNombre());
 
                 } else if ((nuevaCantidad + cantidadAuemtar) > 8) {
-                    System.out.println("escede la acapaciada de unidades");
+                    p.setCantidadActual(8);
+                    System.out.println("escede la acapaciada de unidades  que por prioducto necesita.");
 
                 }
             }

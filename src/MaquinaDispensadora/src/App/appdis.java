@@ -32,7 +32,7 @@ public class appdis {
         dispensadora.productosAgotados();
         dispensadora.consultarUnidades("chistris");
         dispensadora.totalUnidades();
-        dispensadora.aumentarProducto(100, 2);
+        dispensadora.aumentarProducto(100, 12);
         dispensadora.consultarUnidades("boliquesos");
         dispensadora.totalUnidades();
         dispensadora.sacarUnidad("margarita");
