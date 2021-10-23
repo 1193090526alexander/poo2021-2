@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/POO-2.iml" filepath="$PROJECT_DIR$/.idea/POO-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Televisor/Televisor.iml" filepath="$PROJECT_DIR$/src/Televisor/Televisor.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Universidad/Universidad.iml" filepath="$PROJECT_DIR$/src/Universidad/Universidad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/figuras/figuras.iml" filepath="$PROJECT_DIR$/src/figuras/figuras.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/parcialPoo/parcialPoo.iml" filepath="$PROJECT_DIR$/src/parcialPoo/parcialPoo.iml" />
     </modules>
   </component>

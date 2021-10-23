@@ -32,7 +32,7 @@ public class carritoDeMercado {
     public List<Producto> buscarPorTipo(String tipo){
         List<Producto> productosTipo = new ArrayList<>();
         for (Producto productos: this.getProductos()) {
-            if (productos.equals(tipo)) {
+            if (productos.getTipo().equals(tipo)) {
                 productosTipo.add(productos);
             }
         }
@@ -62,4 +62,7 @@ public class carritoDeMercado {
     public List<Producto> getProductos() {
         return productos;
     }
+
+
+
 }
